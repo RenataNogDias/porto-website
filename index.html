@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Porto, the best city in the World 🌍💙</title>
+    <style>
+      body {
+        background-image: linear-gradient(#8baaaa, #9e7187);
+      }
+      h1,
+      h2 {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+      h1 {
+        color: #faf5ef;
+      }
+      h2 {
+        font-weight: 100;
+        color: #e2e1ef;
+      }
+      img {
+        align-content: center;
+      }
+      p {
+        color: #faf5ef;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 150%;
+      }
+      span {
+        color: #d2d0fe;
+      }
+      a {
+        color: #e3c4a8;
+        font-size: 11px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      button {
+        background-color: #bdbdbd;
+        border: none;
+        border-radius: 8px;
+        padding: 15px 40px;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 3px 3px 2px #616161;
+        transition: all 120ms ease-in-out;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        color: #3c6f9c;
+      }
+      button:hover {
+        background: #e0e0e0;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 700px;
+        padding: 30px;
+        margin: 0 auto;
+      }
+      .pictures {
+        display: grid;
+        padding: 10px 5px 10px 40px;
+        max-width: 450px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        grid-template-areas:
+          "a a b b"
+          "a a b b"
+          "a a c c"
+          "a a c c";
+      }
+      .left-pic {
+        grid-area: a;
+        filter: grey;
+        filter: grayscale(0);
+        transition: all 0.6s ease-in-out;
+      }
+      .left-pic:hover {
+        cursor: pointer;
+        filter: none;
+        filter: grayscale(1);
+        transform: scale(1.01);
+      }
+      .right-pic-up {
+        grid-area: b;
+        align-self: start;
+        filter: grey;
+        filter: grayscale(0);
+        transition: all 0.6s ease-in-out;
+      }
+      .right-pic-up:hover {
+        cursor: pointer;
+        filter: none;
+        filter: grayscale(1);
+        transform: scale(1.01);
+      }
+      .right-pic-bottom {
+        grid-area: c;
+        align-self: end;
+        filter: grey;
+        filter: grayscale(0);
+        transition: all 0.6s ease-in-out;
+      }
+      .right-pic-bottom:hover {
+        cursor: pointer;
+        filter: none;
+        filter: grayscale(1);
+        transform: scale(1.01);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Porto, the Unvanquished City
+      </h1>
+      <h2>
+        Elected
+        <strong>
+          Best European Destination
+        </strong>
+        three times
+      </h2>
+      <hr />
+      <div class="pictures">
+        <a
+          href="http://www.torredosclerigos.pt/en/"
+          target="blank"
+          class="left-pic"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Torre_de_los_Cl%C3%A9rigos%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_01.JPG"
+            alt="Clerigo's tower"
+            width="200"
+          />
+        </a>
+        <a
+          href="http://www.visitporto.travel/Visitar/Paginas/default.aspx"
+          target="blank1"
+          class="right-pic-up"
+        >
+          <img
+            src="http://www.warmrental.com/blog/wp-content/uploads/2018/05/20-Things-To-Do-In-Porto-That-You-Cannot-Miss-0.jpg"
+            alt="Porto bridge view"
+            width="400"
+          />
+        </a>
+        <a
+          class="right-pic-bottom"
+          href="https://www.casadamusica.com/"
+          target="blank2"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/60/Casamusicaexterior.jpg"
+            alt="Casa da Música - Porto landmark"
+            width="400"
+          />
+        </a>
+      </div>
+      <hr />
+      <p>
+        <span>Porto</span> is a fascinating and vibrant city and is one of
+        Europe’s most respected tourist destinations. The city boasts an
+        extensive history, interesting tourist attractions, a buzzing nightlife,
+        and outstanding tourist facilities. There is a lot to see and do in
+        <span>Porto</span>, and this diverse city will appeal to a wide range of
+        visitors. <span>Porto</span> is an historic and varied city, from the
+        warren of narrow streets that make up the ancient Ribeira district
+        through to the grand plaza of the Trindade district. The region is famed
+        for the production of Port, which is still stored and matured in the
+        vast cellars that stretch along the banks of the Douro River.
+        <span>Porto</span>’s motto is
+        <em>Antiga, Mui Nobre, Sempre Leal e Invicta Cidade do Porto</em>, which
+        means Old, Very Noble, Always Loyal and Undefeated City of Porto.
+      </p>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Porto" target="blank">
+          Find out more
+        </a>
+      </p>
+      <br />
+      <button>
+        Visit Porto
+      </button>
+    </div>
+    <script>
+      function visitPorto() {
+        let visitQuestion = prompt("Do you want to visit Porto?");
+        visitQuestion = visitQuestion.toLowerCase();
+        if (visitQuestion === "yes") {
+          let name = prompt("What is your name?");
+          if (name.length > 0) {
+            alert("Hi, " + name + "! I'll see you in Porto! 🚗🍻🎉");
+          } else {
+            alert("Sorry, I couldn't understand your name... 😞😭");
+          }
+        } else {
+          alert("Fine, your loss! 🖐");
+        }
+      }
+      let visitButton = document.querySelector("button");
+      visitButton.addEventListener("click", visitPorto);
+    </script>
+  </body>
+</html>
